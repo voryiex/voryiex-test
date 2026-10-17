@@ -16,11 +16,3 @@
 * **Cache-Aligned Layouts:** Explicit memory alignment (`#[repr(C, align(64))]`) and atomic operations to optimize CPU cache lines and avoid data races.
 
 ---
-
-## Project Structure
-
-* **`lib.rs`**: Core engine implementation, including:
-  * `RaftReplicationManager`: Consensus log ring buffer and entry replication.
-  * `TitanVortexEngine`: Main storage node managing MVCC slots, transactions, OCC checks, and background GC.
-
----
